@@ -10,7 +10,7 @@
         "reveal": "silent"
       },
       "options": {
-        "cwd": "${workspaceRoot}/FullMetalMachine.Tests"
+        "cwd": "${workspaceRoot}/MetalSharp.Tests"
       },
       "problemMatcher": "$msCompile"
     }, {
@@ -22,7 +22,7 @@
         "reveal": "silent"
       },
       "options": {
-        "cwd": "${workspaceRoot}/FullMetalMachine.Brainfuck"
+        "cwd": "${workspaceRoot}/MetalSharp.Brainfuck"
       },
       "problemMatcher": "$msCompile"
     }
