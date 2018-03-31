@@ -1,8 +1,8 @@
 Metal#
 ======
 
-A type-safe F# assembler currently targeting x86 and ARM.
-This is a work in progress.
+A type-safe assembler currently targeting x86 and ARM, in F#.
+**This is a work in progress.**
 
 ## Quick start
 ```fsharp
