@@ -1,0 +1,3 @@
+[submodule "MetalSharp.Tests/Keystone"]
+	path = MetalSharp.Tests/Keystone
+	url = https://github.com/6A/keystone.git

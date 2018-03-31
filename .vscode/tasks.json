@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build tests",
+      "command": "dotnet build",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "options": {
+        "cwd": "${workspaceRoot}/FullMetalMachine.Tests"
+      },
+      "problemMatcher": "$msCompile"
+    }, {
+      "label": "build bf",
+      "command": "dotnet build",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "options": {
+        "cwd": "${workspaceRoot}/FullMetalMachine.Brainfuck"
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

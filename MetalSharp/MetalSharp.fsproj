@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="CodeBuilder.fs" />
+    <Compile Include="Operand.fs" />
+
+    <Compile Include="ARM/ARM.fs" />
+    <Compile Include="ARM/Instructions.fs" />
+
+    <Compile Include="X86/X86.fs" />
+    <Compile Include="X86/Instructions.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExpandableAllocator" Version="0.2.0" />
+  </ItemGroup>
+
+</Project>

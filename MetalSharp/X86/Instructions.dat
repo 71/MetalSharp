@@ -1,0 +1,77 @@
+0		add		rm8,  r8
+1		add		rmy,  ry
+2		add		r8,   rm8
+3		add		ry,   rmy
+28	sub		rm8,  r8
+29	sub		rmy,  ry
+2a	sub		r8,   rm8
+2b	sub		ry,   rmy
+
+40	inc		rx					sra
+48	dec		rx					sra
+50	push	rx					sra
+58	pop		ry					sra nopr
+
+70	jo		rel8
+71	jno		rel8
+72	jc		rel8
+73	jnc		rel8
+74	jz		rel8
+75	jnz		rel8
+74	je		rel8
+75	jne		rel8
+76	jbe		rel8
+77	jnbe	rel8
+78	js		rel8
+79	jns		rel8
+7a	jp		rel8
+7b	jnp		rel8
+7c	jl		rel8
+7d	jnl		rel8
+7e	jle		rel8
+7f	jnle	rel8
+
+80	add		rm8, imm8		ext0
+80	sub		rm8, imm8		ext5
+80	cmp		rm8, imm8		ext7
+81	add		rmy, immx		ext0
+81	sub		rmy, immx		ext5
+81	cmp		rmy, immx		ext7
+83	add		rmy, imm8		ext0
+83	sub		rmy, imm8		ext5
+83	cmp		rmy, imm8		ext7
+
+88	mov		rm8, r8
+89	mov		rmy, ry
+8a	mov		r8, rm8
+8b	mov		ry, rmy
+8d	lea		ry, mz
+
+9c	pushf	void
+9d	popf	void
+
+b0	mov		r8, imm8		sra
+b8	mov		ry, immy		sra
+
+c3	ret		void
+
+c6	mov		rm8, imm8
+c7	mov		rmy, immx
+
+e8	call	relx
+e9	jmp		relx
+ea	jmpf	relx
+eb	jmp		rel8
+
+f6	test	rm8, imm8		ext0
+f7	test	rmy, immx		ext0
+
+fe	inc		rm8					ext0
+fe	dec		rm8					ext1
+ff	inc		rmy					ext0
+ff	dec		rmy					ext1
+ff	call	rmy					ext2 nopr rpre
+ff	callf	rmy					ext3 nopr
+ff	jmp		rmx					ext4
+ff	jmpf	rmx					ext5
+ff	push	rmy					ext6 nopr

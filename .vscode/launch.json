@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch tests",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build tests",
+      "program": "${workspaceFolder}/FullMetalMachine.Tests/bin/Debug/netcoreapp2.0/FullMetalMachine.Tests.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    }, {
+      "name": "Launch brainfuck",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build bf",
+      "program": "${workspaceFolder}/FullMetalMachine.Brainfuck/bin/Debug/netcoreapp2.0/FullMetalMachine.Brainfuck.dll",
+      "args": ["hello", "world"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}
