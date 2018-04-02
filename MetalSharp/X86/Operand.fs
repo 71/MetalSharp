@@ -1,4 +1,4 @@
-namespace MetalSharp
+namespace MetalSharp.X86
 
 /// Defines the size of an operand.
 [<AbstractClass>]

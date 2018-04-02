@@ -6,11 +6,11 @@
 
   <ItemGroup>
     <Compile Include="CodeBuilder.fs" />
-    <Compile Include="Operand.fs" />
 
     <Compile Include="ARM/ARM.fs" />
     <Compile Include="ARM/Instructions.fs" />
 
+    <Compile Include="X86/Operand.fs" />
     <Compile Include="X86/X86.fs" />
     <Compile Include="X86/Instructions.fs" />
   </ItemGroup>
