@@ -1,6 +1,9 @@
 Metal#
 ======
 
+> **Warning**: This project will be replaced by [ASM.](https://github.com/6A/asmdot),
+> and should be considered abandoned.
+
 A type-safe assembler currently targeting x86 and ARM, in F#.
 **This is a work in progress.**
 
